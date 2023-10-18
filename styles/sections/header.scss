@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+.a-navs{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+.a-nav{
+    @include header-a;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.telephone{
+    @include telephone;
+}
+.line-telephone{
+    width: 105px;
+    height: 2px;
+    background: #D1A954;;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-left: 0;
+}
+aside{
+    width: 100%;
+    max-width: 150px;
+    background: rgba(51, 51, 51, 0.75);
+}
+
+

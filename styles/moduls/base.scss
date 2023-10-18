@@ -1,0 +1,71 @@
+@import '../containers/media.scss';
+:root{
+    --container: 1600px;
+    @include smallLaptop(){
+        --container: 1400px;
+    };
+    @include horizontalTable{
+        --container: 1240px;
+    };
+    @include verticalTable{
+        --container: 880px;
+    };
+    @include defaultMobile{
+        --container: 375px;
+    };
+};
+
+
+
+
+
+
+.container{
+    max-width: var(--container);
+    margin: 0 auto;
+}
+@mixin telephone{
+    font-family: Open Sans Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+}
+@mixin header-a{
+    font-family: Open Sans Condensed;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+@mixin heading_42{
+    font-size: 42px;
+    font-weight: 500;
+    margin: 0;
+}
+@mixin heading_18{
+    font-size: 18px;
+    font-weight: 300;
+}
+@mixin heading_20{
+    font-size: 20px;
+    font-weight: 400;
+}
+@mixin heading_24{
+    font-size: 24px;
+    font-weight: 400;
+}
+@mixin heading_16{
+    font-size: 16px;
+    font-weight: 300;
+}
